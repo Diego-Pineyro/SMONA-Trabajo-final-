@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icono" href="imagenes/ansiedad.png">
+    <title>Inventario STAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a class="logo"><img src="imagenes/ansiedad.png"></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="admin.html">Administrador</a></li>
+            </ul>
+        </nav>
+</header>
+    <h1>Inventario STAI</h1>
+    <div class="instrucciones">
+        <p>Instrucciones: A continuación encontrará unas frases que se utilizan corrientemente para describirse uno a sí mismo.
+            Lea cada frase y señale la puntuación de "Nada" a "Mucho" que indique mejor cómo se siente usted ahora mismo, en este momento.
+            No hay respuestas buenas ni malas. No emplee demasiado tiempo en cada frase y conteste señalando la respuesta que mejor
+            describa su situación presente.</p>
+    </div>
+    <div id="question-container">
+        <form id="question-form">
+                <div class="pregunta">
+                    <h2>Pregunta 1 de 40</h2>
+                    <p>Me siento calmado.</p>
+                    <label> Nada <input type="radio" name="p1" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p1" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p1" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p1" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 2 de 40</h2>
+                    <p>Me siento seguro.</p>
+                    <label> Nada <input type="radio" name="p2" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p2" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p2" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p2" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 3 de 40</h2>
+                    <p>Estoy tenso.</p>
+                    <label> Nada <input type="radio" name="p3" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p3" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p3" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p3" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 4 de 40</h2>
+                    <p>Estoy contrariado.</p>
+                    <label> Nada <input type="radio" name="p4" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p4" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p4" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p4" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 5 de 40</h2>
+                    <p>Me siento cómodo (estoy a gusto).</p>
+                    <label> Nada <input type="radio" name="p5" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p5" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p5" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p5" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 6 de 40</h2>
+                    <p>Me siento alterado.</p>
+                    <label> Nada <input type="radio" name="p6" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p6" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p6" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p6" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 7 de 40</h2>
+                    <p>Estoy preocupado ahora por posibles desgracias futuras.</p>
+                    <label> Nada <input type="radio" name="p7" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p7" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p7" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p7" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 8 de 40</h2>
+                    <p>Me siento descansado.</p>
+                    <label> Nada <input type="radio" name="p8" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p8" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p8" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p8" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 9 de 40</h2>
+                    <p>Me siento angustiado.</p>
+                    <label> Nada <input type="radio" name="p9" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p9" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p9" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p9" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 10 de 40</h2>
+                    <p>Me siento confortable.</p>
+                    <label> Nada <input type="radio" name="p10" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p10" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p10" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p10" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 11 de 40</h2>
+                    <p>Tengo confianza en mí mismo.</p>
+                    <label> Nada <input type="radio" name="p11" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p11" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p11" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p11" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 12 de 40</h2>
+                    <p>Me siento nervioso.</p>
+                    <label> Nada <input type="radio" name="p12" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p12" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p12" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p12" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 13 de 40</h2>
+                    <p>Estoy desasosegado.</p>
+                    <label> Nada <input type="radio" name="p13" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p13" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p13" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p13" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 14 de 40</h2>
+                    <p>Me siento muy «atado» (como oprimido).</p>
+                    <label> Nada <input type="radio" name="p14" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p14" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p14" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p14" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 15 de 40</h2>
+                    <p>Estoy relajado.</p>
+                    <label> Nada <input type="radio" name="p15" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p15" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p15" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p15" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 16 de 40</h2>
+                    <p>Me siento satisfecho.</p>
+                    <label> Nada <input type="radio" name="p16" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p16" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p16" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p16" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 17 de 40</h2>
+                    <p>Estoy preocupado.</p>
+                    <label> Nada <input type="radio" name="p17" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p17" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p17" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p17" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 18 de 40</h2>
+                    <p>Me siento aturdido y sobreexcitado.</p>
+                    <label> Nada <input type="radio" name="p18" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p18" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p18" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p18" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 19 de 40</h2>
+                    <p>Me siento alegre.</p>
+                    <label> Nada <input type="radio" name="p19" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p19" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p19" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p19" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 20 de 40</h2>
+                    <p>En este momento me siento bien.</p>
+                    <label> Nada <input type="radio" name="p20" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p20" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p20" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p20" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 21 de 40</h2>
+                    <p>Me siento bien.</p>
+                    <label> Nada <input type="radio" name="p21" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p21" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p21" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p21" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 22 de 40</h2>
+                    <p>Me canso rápidamente.</p>
+                    <label> Nada <input type="radio" name="p22" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p22" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p22" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p22" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 23 de 40</h2>
+                    <p>Siento ganas de llorar.</p>
+                    <label> Nada <input type="radio" name="p23" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p23" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p23" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p23" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 24 de 40</h2>
+                    <p>Me gustaría ser tan feliz como otros.</p>
+                    <label> Nada <input type="radio" name="p24" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p24" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p24" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p24" value="3"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 25 de 40</h2>
+                    <p>Pierdo oportunidades por no decidirme pronto.</p>
+                    <label> Nada <input type="radio" name="p25" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p25" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p25" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p25" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 26 de 40</h2>
+                    <p>Me siento descansado.</p>
+                    <label> Nada <input type="radio" name="p26" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p26" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p26" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p26" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 27 de 40</h2>
+                    <p>Soy una persona tranquila, serena y sosegada.</p>
+                    <label> Nada <input type="radio" name="p27" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p27" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p27" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p27" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 28 de 40</h2>
+                    <p>Veo que las dificultades se amontonan y no puedo con ellas.</p>
+                    <label> Nada <input type="radio" name="p28" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p28" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p28" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p28" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 29 de 40</h2>
+                    <p>Me preocupo demasiado por cosas sin importancia.</p>
+                    <label> Nada <input type="radio" name="p29" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p29" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p29" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p29" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 30 de 40</h2>
+                    <p>Soy feliz.</p>
+                    <label> Nada <input type="radio" name="p30" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p30" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p30" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p30" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 31 de 40</h2>
+                    <p>Suelo tomar las cosas demasiado seriamente.</p>
+                    <label> Nada <input type="radio" name="p31" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p31" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p31" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p31" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 32 de 40</h2>
+                    <p>Me falta confianza en mí mismo.</p>
+                    <label> Nada <input type="radio" name="p32" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p32" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p32" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p32" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 33 de 40</h2>
+                    <p>Me siento seguro.</p>
+                    <label> Nada <input type="radio" name="p33" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p33" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p33" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p33" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 34 de 40</h2>
+                    <p>No suelo afrontar las crisis o dificultades.</p>
+                    <label> Nada <input type="radio" name="p34" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p34" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p34" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p34" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 35 de 40</h2>
+                    <p>Me siento triste(melancólico).</p>
+                    <label> Nada <input type="radio" name="p35" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p35" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p35" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p35" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 36 de 40</h2>
+                    <p>Estoy satisfecho.</p>
+                    <label> Nada <input type="radio" name="p36" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p36" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p36" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p36" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 37 de 40</h2>
+                    <p>Me rondan y molestan pensamientos sin importancia.</p>
+                    <label> Nada <input type="radio" name="p37" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p37" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p37" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p37" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 38 de 40</h2>
+                    <p>Me afectan tanto los desengaños que no puedo olvidarlos.</p>
+                    <label> Nada <input type="radio" name="p38" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p38" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p38" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p38" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 39 de 40</h2>
+                    <p>Soy una persona estable.</p>
+                    <label> Nada <input type="radio" name="p39" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p39" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p39" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p39" value="3" onclick="seleccionar()"> </label>
+                </div>   
+                <div class="pregunta">
+                    <h2>Pregunta 40 de 40</h2>
+                    <p>Cuando pienso sobre asuntos y preocupaciones actuales me pongo tenso y agitado.</p>
+                    <label> Nada <input type="radio" name="p40" value="0" onclick="seleccionar()"> </label>
+                    <label> Algo <input type="radio" name="p40" value="1" onclick="seleccionar()"> </label>
+                    <label> Bastante <input type="radio" name="p40" value="2" onclick="seleccionar()"> </label>
+                    <label> Mucho <input type="radio" name="p40" value="3" onclick="seleccionar()"> </label>
+                </div>
+        </form>
+    <div class="navigation-buttons">
+        <button class="boton" type="button" onclick="preguntaAnterior()" >Anterior</button>
+        <button class="boton" type="button" onclick="siguientePregunta()">Siguiente</button>
+        
+        <!-- <button class="boton" type="button" onclick="location.href='index.html'">Reiniciar Cuestionario</button> -->
+    </div>
+    </div>
+                
+    <script src="cuestionario.js"></script>
+    <footer>
+        <p>Desarrolladores: Bazaras, Jooskens, Marasco, Piñeyro. </p>
+        <p>Derechos Reservados ©</p>
+    </footer>
+</body>
+</html>

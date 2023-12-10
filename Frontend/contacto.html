@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a class="logo"><img src="imagenes/ansiedad.png"></a></li> 
+            <li><a href='index.html'>Inicio</a></li>
+            <li><a href='quienes_somos.html'>Quiénes somos</a></li>
+            <li><a href='contacto.html'>Contacto</a></li>
+            <li><a href="admin.html">Administrador</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>SIMONA</h1>
+        <h2>Sistema de Monitoreo de Niveles de Ansiedad</h2>
+    </div>
+  </header>
+
+  <h1>Formulario de contacto</h1>
+  
+
+  <form id="contactForm"  method="post">
+    <div class="input-container">
+      <label for="nombre"><i class="fas fa-user"></i> Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+    </div>
+
+    <div class="input-container">
+      <label for="apellido"><i class="fas fa-user"></i> Apellido:</label><br>
+      <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required><br><br>
+    </div>
+
+    <div class="input-container">
+      <label for="telefono"><i class="fas fa-phone"></i> Teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required><br><br>
+    </div>
+
+    <div class="input-container">
+      <label for="email"><i class="fas fa-envelope"></i> Email:</label><br>
+      <input type="email" id="email" name="email"  placeholder="Tu correo electrónico" required><br><br>
+    </div>
+
+    <div class="input-container">
+      <label for="confirmEmail"><i class="fas fa-envelope"></i> Confirma tu Email:</label><br>
+      <input type="email" id="confirmEmail" name="confirmEmail"  placeholder="Confirma tu correo electrónico" required><br><br>
+    </div>
+
+    <div class="input-container">
+      <label for="mensaje"><i class="fas fa-comment"></i> Mensaje</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="       Tu mensaje" required>
+      </textarea><br><br>
+    </div>
+
+    <input type="submit" value="Enviar">
+  </form>
+  <footer>
+      <p>Desarrolladores: Bazaras, Jooskens, Marasco, Piñeyro. </p>
+      <p>Derechos Reservados ©</p>
+  </footer>
+  <div id="mensajeEnviado" style="display: none;">Datos enviados</div>
+  </div>
+  <script src="formulario.js"></script>
+</body>
+</html>
