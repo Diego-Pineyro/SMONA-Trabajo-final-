@@ -104,7 +104,7 @@ class Mensaje:
 
 
 # Creamos el objeto
-mensaje = Mensaje(host='localhost', user='root', password='', database='mensajes')
+mensaje = Mensaje(host='diegopiney.mysql.pythonanywhere-services.com', user='diegopiney', password='Simonagrupo9', database='diegopiney$default')
 
 
 
